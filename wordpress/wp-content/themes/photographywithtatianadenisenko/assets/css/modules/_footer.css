@@ -1,0 +1,9 @@
+.footer {
+  margin: 110px 0 55px 0;
+  text-align: center;
+
+  &_small-margin {
+    margin-top: 55px;
+  }
+}
+

@@ -5,9 +5,14 @@ body {
   color: $black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  max-width: 960px;
+  max-width: 990px;
   margin: 0 auto;
+  padding: 0 15px;
   box-sizing: border-box;
+}
+
+p {
+  margin: 0;
 }
 
 a {
@@ -17,4 +22,17 @@ a {
 
 li {
   list-style-type: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  margin-top: 110px;
+
+  &_small-margin {
+    margin-top: 55px;
+  }
 }
