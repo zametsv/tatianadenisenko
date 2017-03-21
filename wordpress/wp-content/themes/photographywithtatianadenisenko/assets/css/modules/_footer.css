@@ -5,5 +5,10 @@
   &_small-margin {
     margin-top: 55px;
   }
+
+  &__copyright {
+    font-size: 13px;
+    line-height: auto;
+  }
 }
 
