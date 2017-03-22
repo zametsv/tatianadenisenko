@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>IG</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M8.58,0 L3.42,0 C1.54000781,0 0,1.54000781 0,3.42 L0,8.58 C0,10.4599922 1.54000781,12 3.42,12 L8.58,12 C10.4599922,12 12,10.4599922 12,8.58 L12,3.42 C12,1.54000781 10.4599922,0 8.58,0 Z M11.5999922,8.58 C11.5999922,10.2400078 10.2399844,11.5999922 8.58,11.5999922 L3.42,11.5999922 C1.75999219,11.5999922 0.400007813,10.2399844 0.400007813,8.58 L0.400007813,3.42 C0.400007813,1.75999219 1.76001563,0.400007813 3.42,0.400007813 L8.58,0.400007813 C10.2400078,0.400007813 11.5999922,1.76001563 11.5999922,3.42 L11.5999922,8.58 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-0.11" y="-0.11" width="12.22" height="12.22">
+            <rect x="-0.11" y="-0.11" width="12.22" height="12.22" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+        <path d="M6,2.80000781 C4.24000781,2.80000781 2.80000781,4.24000781 2.80000781,6 C2.80000781,7.75999219 4.24000781,9.19999219 6,9.19999219 C7.75999219,9.19999219 9.19999219,7.75999219 9.19999219,6 C9.19999219,4.24000781 7.75999219,2.80000781 6,2.80000781 Z M6,8.80000781 C4.45999219,8.80000781 3.19999219,7.54000781 3.19999219,6 C3.19999219,4.45999219 4.45999219,3.19999219 6,3.19999219 C7.54000781,3.19999219 8.80000781,4.45999219 8.80000781,6 C8.80000781,7.54000781 7.54000781,8.80000781 6,8.80000781 Z" id="path-3"></path>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-0.11" y="-0.11" width="6.61998437" height="6.61998438">
+            <rect x="2.69000781" y="2.69000781" width="6.61998437" height="6.61998438" fill="white"></rect>
+            <use xlink:href="#path-3" fill="black"></use>
+        </mask>
+        <path d="M6,3.79999219 C4.78000781,3.79999219 3.79999219,4.77998438 3.79999219,6 C3.79999219,7.21999219 4.77998437,8.20000781 6,8.20000781 C7.22001562,8.20000781 8.20000781,7.22001563 8.20000781,6 C8.20000781,4.77998438 7.21999219,3.79999219 6,3.79999219 Z M6,7.8 C4.99999219,7.8 4.2,7.00000781 4.2,6 C4.2,4.99999219 4.99999219,4.2 6,4.2 C7.00000781,4.2 7.8,4.99999219 7.8,6 C7.8,7.00000781 7.00000781,7.8 6,7.8 Z" id="path-5"></path>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-0.11" y="-0.11" width="4.62001563" height="4.62001563">
+            <rect x="3.68999219" y="3.68999219" width="4.62001563" height="4.62001563" fill="white"></rect>
+            <use xlink:href="#path-5" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(1.000000, 1.000000)" fill-rule="nonzero">
+            <g id="IG">
+                <g>
+                    <g id="Shape">
+                        <use fill="#424242" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <use stroke="#424242" mask="url(#mask-2)" stroke-width="0.22" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="Shape">
+                        <use fill="#424242" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        <use stroke="#424242" mask="url(#mask-4)" stroke-width="0.22" xlink:href="#path-3"></use>
+                    </g>
+                    <g id="Shape">
+                        <use fill="#424242" fill-rule="evenodd" xlink:href="#path-5"></use>
+                        <use stroke="#424242" mask="url(#mask-6)" stroke-width="0.22" xlink:href="#path-5"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

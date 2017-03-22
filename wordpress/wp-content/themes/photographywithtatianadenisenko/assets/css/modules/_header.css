@@ -1,9 +1,13 @@
 .header {
   display: flex;
   justify-content: space-between;
-  margin-top: 25px;
+  position: relative;
 
   &__logo {
     margin-top: 5px;
+
+    & img {
+      width: auto;
+    }
   }
 }

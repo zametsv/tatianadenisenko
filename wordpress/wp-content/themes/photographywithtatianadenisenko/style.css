@@ -383,9 +383,6 @@ body {
   color: #424242;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  max-width: 990px;
-  margin: 0 auto;
-  padding: 0 15px;
   box-sizing: border-box;
 }
 p {
@@ -408,6 +405,25 @@ img {
 .container_small-margin {
   margin-top: 55px;
 }
+@media (max-width: 960px) {
+  .container_small-margin {
+    margin-top: 15px;
+  }
+}
+.wrapper {
+  max-width: 960px;
+  margin: 25px auto 55px;
+}
+@media (max-width: 960px) {
+  .wrapper {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 960px) {
+  .wrap {
+    margin: 0 15px;
+  }
+}
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -415,10 +431,32 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 25px;
+  position: relative;
 }
 .header__logo {
   margin-top: 5px;
+}
+.header__logo img {
+  width: auto;
+}
+.mobile-nav-icon {
+  width: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media (min-width: 960px) {
+  .mobile-nav-icon {
+    display: none;
+  }
+}
+.mobile-nav-icon:hover {
+  cursor: pointer;
+}
+@media (max-width: 960px) {
+  .header__nav {
+    display: none;
+  }
 }
 .header__nav ul {
   margin: 0;
@@ -432,13 +470,47 @@ img {
   margin-right: 0px;
 }
 .footer {
-  margin: 110px 0 55px 0;
+  margin-top: 110px;
   text-align: center;
+  position: relative;
 }
 .footer_small-margin {
   margin-top: 55px;
 }
+@media (max-width: 960px) {
+  .footer_small-margin {
+    margin-top: 25px;
+  }
+}
 .footer__copyright {
   font-size: 13px;
   line-height: auto;
+  display: inline-block;
+}
+@media (max-width: 736px) {
+  .footer__copyright {
+    display: none;
+  }
+}
+.footer__social-shapes {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media (max-width: 736px) {
+  .footer__social-shapes {
+    position: static;
+  }
+}
+.footer__social-shape {
+  display: inline-block;
+  width: auto;
+  height: 100%;
+  vertical-align: middle;
+}
+.footer__link {
+  margin-right: 25px;
+}
+.footer__link_no-margin {
+  margin-right: 0px;
 }

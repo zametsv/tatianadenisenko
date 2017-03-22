@@ -17,5 +17,9 @@ gulp.task('watch', function(){
 gulp.task('styles', function(){
    return gulp.src('./wordpress/wp-content/themes/photographywithtatianadenisenko/assets/css/style.css')
     .pipe(postcss([cssimport, cssvars, nested, autoprefixer]))
+    .on('error', function(errorInfo){
+        console.log(errorInfo.toString());
+        this.emit('end');
+    })
     .pipe(gulp.dest('./wordpress/wp-content/themes/photographywithtatianadenisenko/'));
 });

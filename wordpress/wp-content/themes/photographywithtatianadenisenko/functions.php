@@ -15,10 +15,5 @@ function theme_fonts() {
 
 add_action('wp_print_styles', 'theme_fonts');
 
-//Navigation menus
-register_nav_menus(array(
-    'primary' => __('Primary Menu'),
-));
-
 //Add Customizer functionality
 require get_template_directory(). '/inc/customizer.php';

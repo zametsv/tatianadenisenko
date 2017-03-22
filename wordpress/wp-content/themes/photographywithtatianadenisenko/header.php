@@ -6,17 +6,22 @@
         <title><?php bloginfo('name'); ?> | <?php is_front_page() ? bloginfo('description') :  wp_title(''); ?></title>
         <?php wp_head(); ?>
     </head>
+    <div class="wrapper">
     <body>
-        <header class="header">
-            <a href="<?php echo site_url(); ?>" class="header__logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" alt="Logo" width="166px" height="22px" />
-            </a>
-            <nav class="header__nav">
-                <?php
-                $args = array(
-                    'theme_location' => 'primary'
-                );
-                ?>
-                <?php wp_nav_menu($args); ?>
-            </nav>
-        </header>
+        <div class="wrap">
+            <header class="header">
+                <a href="<?php echo site_url(); ?>" class="header__logo">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" alt="Logo" width="166px" height="22px" />
+                </a>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/menu-icon.svg" alt="Menu icon" width="20px" height="11px" class="mobile-nav-icon">
+                <nav class="header__nav">
+                   <ul>
+                       <li><a href="<?php echo site_url(); ?>">Home</a></li>
+                       <li><a href="#">Portfolio</a></li>
+                       <li><a href="#">Blog</a></li>
+                       <li><a href="#">About</a></li>
+                       <li><a href="#">Contact</a></li>
+                   </ul>
+                </nav>
+            </header>
+        </div>

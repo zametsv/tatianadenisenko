@@ -5,9 +5,6 @@ body {
   color: $black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  max-width: 990px;
-  margin: 0 auto;
-  padding: 0 15px;
   box-sizing: border-box;
 }
 
@@ -34,5 +31,23 @@ img {
 
   &_small-margin {
     margin-top: 55px;
+    @media (max-width: 960px) {
+      margin-top: 15px;
+    }
+  }
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 25px auto 55px;
+
+  @media (max-width: 960px) {
+    margin-bottom: 25px;
+  }
+}
+
+.wrap {
+  @media (max-width: 960px) {
+    margin: 0 15px;
   }
 }

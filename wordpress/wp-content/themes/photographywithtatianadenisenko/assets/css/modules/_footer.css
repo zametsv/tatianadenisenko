@@ -1,14 +1,46 @@
 .footer {
-  margin: 110px 0 55px 0;
+  margin-top: 110px;
   text-align: center;
+  position: relative;
 
   &_small-margin {
     margin-top: 55px;
+    @media (max-width: 960px) {
+      margin-top: 25px;
+    }
   }
 
   &__copyright {
     font-size: 13px;
     line-height: auto;
+    display: inline-block;
+    @media (max-width: 736px) {
+      display: none;
+    }
+  }
+  
+  &__social-shapes {
+    position: absolute;
+    top: 0;
+    right: 0;
+    @media (max-width: 736px) {
+      position: static;;
+    }
+  }
+
+  &__social-shape {
+    display: inline-block;
+    width: auto;
+    height: 100%;
+    vertical-align: middle;
+  }
+
+  &__link {
+    margin-right: 25px;
+  }
+
+  &__link_no-margin {
+    margin-right: 0px;
   }
 }
 
