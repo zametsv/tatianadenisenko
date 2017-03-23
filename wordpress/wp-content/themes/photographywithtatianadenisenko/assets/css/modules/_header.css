@@ -5,6 +5,9 @@
 
   &__logo {
     margin-top: 5px;
+    @media (max-width: 961px) {
+      margin-top: 0;
+    }
 
     & img {
       width: auto;

@@ -1,5 +1,8 @@
 <?php get_header(); ?>
   <div class="container container_small-margin">
-    <img src="<?php echo get_theme_mod('showcase_image', get_bloginfo('template_url'). '/assets/images/main-hero-image.jpg'); ?>" class="main-hero-image" alt="Outstanding photo by Tatiana Denisenko" height="640px" width="960px">
+    <picture>
+      <source srcset="<?php echo get_template_directory_uri(); ?>/../../uploads/main-hero-image-responsive.jpg 414w, <?php echo get_template_directory_uri(); ?>/../../uploads/main-hero-image-responsive@2x.jpg 828w" media="(max-width: 414px)">
+      <img srcset="<?php echo get_template_directory_uri(); ?>/../../uploads/main-hero-image.jpg 960w, <?php echo get_template_directory_uri(); ?>/../../uploads/main-hero-image@2x.jpg 1920w" class="main-hero-image" alt="Outstanding photo by Tatiana Denisenko">
+    </picture>
   </div>
 <?php get_footer(); ?>

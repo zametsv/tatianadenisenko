@@ -436,6 +436,11 @@ img {
 .header__logo {
   margin-top: 5px;
 }
+@media (max-width: 961px) {
+  .header__logo {
+    margin-top: 0;
+  }
+}
 .header__logo img {
   width: auto;
 }
@@ -445,7 +450,7 @@ img {
   top: 0;
   right: 0;
 }
-@media (min-width: 960px) {
+@media (min-width: 961px) {
   .mobile-nav-icon {
     display: none;
   }
