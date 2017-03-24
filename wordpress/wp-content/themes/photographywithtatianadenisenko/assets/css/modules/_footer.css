@@ -1,18 +1,11 @@
 .footer {
-  margin-top: 110px;
   text-align: center;
   position: relative;
 
-  &_small-margin {
-    margin-top: 55px;
-    @media (max-width: 960px) {
-      margin-top: 25px;
-    }
-  }
-
   &__copyright {
+    margin: 0;
     font-size: 13px;
-    line-height: auto;
+    line-height: 0;
     display: inline-block;
     @media (max-width: 736px) {
       display: none;
@@ -43,4 +36,3 @@
     margin-right: 0px;
   }
 }
-

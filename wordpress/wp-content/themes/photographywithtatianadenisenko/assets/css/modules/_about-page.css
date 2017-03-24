@@ -1,0 +1,9 @@
+.tatiana-denisenko-photographer-image {
+  float: right;
+  width: 232px;
+  height: 613px;
+  padding: 0 0 15px 15px;
+  @media (max-width: 736px) {
+    display: none;
+  }
+}

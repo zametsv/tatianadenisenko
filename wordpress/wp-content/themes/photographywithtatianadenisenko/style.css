@@ -377,7 +377,7 @@ template {
   display: none;
 }
 body {
-  font-family: 'Exo 2';
+  font-family: 'Exo 2', sans-serif;
   font-style: normal;
   font-weight: 200;
   color: #424242;
@@ -385,8 +385,24 @@ body {
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
 }
+h2 {
+  margin: 0;  
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #424242;
+  font-size: 24px;
+  line-height: 33px;
+}
+@media (max-width: 414px) {
+  h2 {
+    font-size: 21px;
+    line-height: 28px;
+  }
+}
 p {
-  margin: 0;
+  margin: 15px 0 0 0;
+  line-height: 24px;
 }
 a {
   text-decoration: none;
@@ -400,15 +416,32 @@ img {
   height: auto;
 }
 .container {
-  margin-top: 110px;
+  margin: 110px auto 110px auto;
+}
+@media (max-width: 960px) {
+  .container {
+    margin-top: 55px;
+    margin-bottom: 55px;
+  }
+}
+@media (max-width: 414px) {
+  .container {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
 }
 .container_small-margin {
   margin-top: 55px;
+  margin-bottom: 55px;
 }
 @media (max-width: 960px) {
   .container_small-margin {
-    margin-top: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
+}
+.container_narrow {
+  max-width: 641px;
 }
 .wrapper {
   max-width: 960px;
@@ -422,6 +455,18 @@ img {
 @media (max-width: 960px) {
   .wrap {
     margin: 0 15px;
+  }
+}
+.content {
+  clear: both;
+  overflow: auto;
+}
+.content__heading-top-margin {
+  margin-top: 55px;
+}
+@media (max-width: 736px) {
+  .content__heading-top-margin {
+    margin-top: 0;
   }
 }
 .header {
@@ -475,21 +520,13 @@ img {
   margin-right: 0px;
 }
 .footer {
-  margin-top: 110px;
   text-align: center;
   position: relative;
 }
-.footer_small-margin {
-  margin-top: 55px;
-}
-@media (max-width: 960px) {
-  .footer_small-margin {
-    margin-top: 25px;
-  }
-}
 .footer__copyright {
+  margin: 0;
   font-size: 13px;
-  line-height: auto;
+  line-height: 0;
   display: inline-block;
 }
 @media (max-width: 736px) {
@@ -518,4 +555,15 @@ img {
 }
 .footer__link_no-margin {
   margin-right: 0px;
+}
+.tatiana-denisenko-photographer-image {
+  float: right;
+  width: 232px;
+  height: 613px;
+  padding: 0 0 15px 15px;
+}
+@media (max-width: 736px) {
+  .tatiana-denisenko-photographer-image {
+    display: none;
+  }
 }
