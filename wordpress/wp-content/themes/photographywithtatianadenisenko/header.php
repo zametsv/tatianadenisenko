@@ -18,7 +18,7 @@
                    <ul>
                        <li><a href="<?php echo site_url(); ?>">Home</a></li>
                        <li><a href="#">Portfolio</a></li>
-                       <li><a href="#">Blog</a></li>
+                       <li><a href="blog">Blog</a></li>
                        <li><a href="about">About</a></li>
                        <li><a href="#">Contact</a></li>
                    </ul>

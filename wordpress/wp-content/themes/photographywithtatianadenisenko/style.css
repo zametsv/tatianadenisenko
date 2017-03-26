@@ -443,6 +443,9 @@ img {
 .container_narrow {
   max-width: 641px;
 }
+.container_narrowest {
+  max-width: 469px;
+}
 .wrapper {
   max-width: 960px;
   margin: 25px auto 55px;
@@ -468,6 +471,22 @@ img {
   .content__heading-top-margin {
     margin-top: 0;
   }
+}
+.content__post-date {
+  font-size: 10px;
+  line-height: 12px;
+}
+.content__post-heading {
+  margin-top: 10px;
+}
+.content__permalink {
+  margin-top: 15px;
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
 }
 .header {
   display: -webkit-box;
