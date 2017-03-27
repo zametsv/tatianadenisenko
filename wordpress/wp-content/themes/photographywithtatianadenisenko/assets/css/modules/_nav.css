@@ -1,31 +1,32 @@
-.mobile-nav-icon {
-  width: auto;
-  position: absolute;
-  top: 0;
-  right: 0;
-  @media (min-width: 961px) {
-    display: none;
-  }
-  &:hover {
-    cursor: pointer;
-  }
-}
-
 .header__nav {
   @media (max-width: 960px) {
     display: none;
   }
-  ul {
+
+  &-wrap {
     margin: 0;
     padding: 0;
   }
 
-  li {
+  &-wrap-item {
     display: inline-block;
     margin-right: 50px;
   }
 
-  li:last-child {
+  &-wrap-item_no-margin {
     margin-right: 0px;
+  }
+
+  &_mobile-btn {
+    width: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    @media (min-width: 961px) {
+      display: none;
+  }
+  &:hover {
+    cursor: pointer;
+    }
   }
 }

@@ -1,6 +1,10 @@
 .footer {
   text-align: center;
   position: relative;
+  
+  @media (max-width: 960px) {
+    margin: 0 15px;
+  }
 
   &__copyright {
     margin: 0;
@@ -28,11 +32,11 @@
     vertical-align: middle;
   }
 
-  &__link {
+  &__ext-link {
     margin-right: 25px;
   }
 
-  &__link_no-margin {
+  &__ext-link_no-margin {
     margin-right: 0px;
   }
 }

@@ -9,8 +9,20 @@ add_action('wp_enqueue_scripts', 'theme_resources');
 
 function theme_fonts() {
 //Injecting Gogle fonts
-            wp_register_style('OpenSans_and_Exo', 'https://fonts.googleapis.com/css?family=Exo+2:200|Open+Sans');
-            wp_enqueue_style( 'OpenSans_and_Exo');	
+    wp_register_style('OpenSans_and_Exo', 'https://fonts.googleapis.com/css?family=Exo+2:200|Open+Sans');
+    wp_enqueue_style( 'OpenSans_and_Exo');	
 }
 
 add_action('wp_print_styles', 'theme_fonts');
+
+//Changing the excerpt length and dots and brackets at the end
+function custom_excerpt_length() {
+    return 30;
+}
+
+add_filter('excerpt_length', 'custom_excerpt_length');
+
+function new_excerpt_more( $more ) {
+	return '...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');

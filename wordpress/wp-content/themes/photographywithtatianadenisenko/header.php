@@ -8,20 +8,18 @@
     </head>
     <div class="wrapper">
     <body>
-        <div class="wrap">
-            <header class="header">
-                <a href="<?php echo site_url(); ?>" class="header__logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" alt="Logo" width="166px" height="22px" />
-                </a>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/menu-icon.svg" alt="Menu icon" width="20px" height="11px" class="mobile-nav-icon">
-                <nav class="header__nav">
-                   <ul>
-                       <li><a href="<?php echo site_url(); ?>">Home</a></li>
-                       <li><a href="#">Portfolio</a></li>
-                       <li><a href="blog">Blog</a></li>
-                       <li><a href="about">About</a></li>
-                       <li><a href="#">Contact</a></li>
-                   </ul>
-                </nav>
-            </header>
-        </div>
+        <header class="header">
+            <a href="<?php echo site_url(); ?>" class="header__logo-link">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" alt="Logo" width="166px" height="22px" class="header__logo-image"/>
+            </a>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/menu-icon.svg" alt="Menu icon" width="20px" height="11px" class="header__nav_mobile-btn">
+            <nav class="header__nav">
+                <ul class="header__nav-wrap">
+                    <li class="header__nav-wrap-item"><a href="<?php echo site_url(); ?>" class="header__nav-link">Home</a></li>
+                    <li class="header__nav-wrap-item"><a href="#" class="header__nav-link">Portfolio</a></li>
+                    <li class="header__nav-wrap-item"><a href="blog" class="header__nav-link">Blog</a></li>
+                    <li class="header__nav-wrap-item"><a href="about" class="header__nav-link">About</a></li>
+                    <li class="header__nav-wrap-item header__nav-wrap-item_no-margin"><a href="#" class="header__nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>

@@ -385,35 +385,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
 }
-h2 {
-  margin: 0;  
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  color: #424242;
-  font-size: 24px;
-  line-height: 33px;
+.wrapper {
+  max-width: 960px;
+  margin: 25px auto 55px;
 }
-@media (max-width: 414px) {
-  h2 {
-    font-size: 21px;
-    line-height: 28px;
+@media (max-width: 960px) {
+  .wrapper {
+    margin-bottom: 25px;
   }
-}
-p {
-  margin: 15px 0 0 0;
-  line-height: 24px;
-}
-a {
-  text-decoration: none;
-  color: #424242;
-}
-li {
-  list-style-type: none;
-}
-img {
-  width: 100%;
-  height: auto;
 }
 .container {
   margin: 110px auto 110px auto;
@@ -446,40 +425,67 @@ img {
 .container_narrowest {
   max-width: 469px;
 }
-.wrapper {
-  max-width: 960px;
-  margin: 25px auto 55px;
+h2 {
+  margin: 0;  
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #424242;
+  font-size: 24px;
+  line-height: 33px;
 }
-@media (max-width: 960px) {
-  .wrapper {
-    margin-bottom: 25px;
+@media (max-width: 414px) {
+  h2 {
+    font-size: 21px;
+    line-height: 28px;
   }
 }
-@media (max-width: 960px) {
-  .wrap {
-    margin: 0 15px;
-  }
+p {
+  margin: 15px 0 0 0;
+  line-height: 24px;
 }
-.content {
+a {
+  text-decoration: none;
+  color: #424242;
+}
+li {
+  list-style-type: none;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.post_clearfix {
   clear: both;
   overflow: auto;
 }
-.content__heading-top-margin {
+@media (max-width: 960px) {
+  .post {
+    margin: 0 15px;
+  }
+}
+.post_padding-top:first-child {
+  padding-top: 0;
+}
+.post_padding-top {
+  padding-top: 55px;
+}
+.post__heading_margin-top-small {
+  margin-top: 10px;
+}
+.post__heading_margin-top {
   margin-top: 55px;
 }
 @media (max-width: 736px) {
-  .content__heading-top-margin {
+  .post__heading_margin-top {
     margin-top: 0;
   }
 }
-.content__post-date {
+.post__date {
   font-size: 10px;
   line-height: 12px;
 }
-.content__post-heading {
-  margin-top: 10px;
-}
-.content__permalink {
+.post__permalink {
   margin-top: 15px;
   display: inline-block;
   font-family: 'Open Sans', sans-serif;
@@ -487,6 +493,12 @@ img {
   font-weight: 400;
   font-size: 10px;
   line-height: 12px;
+}
+.wp-caption-text {
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  margin-top: 10px;
 }
 .header {
   display: -webkit-box;
@@ -497,50 +509,60 @@ img {
           justify-content: space-between;
   position: relative;
 }
-.header__logo {
+@media (max-width: 960px) {
+  .header {
+    margin: 0 15px;
+  }
+}
+.header__logo-link {
   margin-top: 5px;
 }
 @media (max-width: 961px) {
-  .header__logo {
+  .header__logo-link {
     margin-top: 0;
   }
 }
-.header__logo img {
+.header__logo-link__logo-image {
   width: auto;
-}
-.mobile-nav-icon {
-  width: auto;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-@media (min-width: 961px) {
-  .mobile-nav-icon {
-    display: none;
-  }
-}
-.mobile-nav-icon:hover {
-  cursor: pointer;
 }
 @media (max-width: 960px) {
   .header__nav {
     display: none;
   }
 }
-.header__nav ul {
+.header__nav-wrap {
   margin: 0;
   padding: 0;
 }
-.header__nav li {
+.header__nav-wrap-item {
   display: inline-block;
   margin-right: 50px;
 }
-.header__nav li:last-child {
+.header__nav-wrap-item_no-margin {
   margin-right: 0px;
+}
+.header__nav_mobile-btn {
+  width: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media (min-width: 961px) {
+  .header__nav_mobile-btn {
+    display: none;
+  }
+}
+.header__nav_mobile-btn:hover {
+  cursor: pointer;
 }
 .footer {
   text-align: center;
   position: relative;
+}
+@media (max-width: 960px) {
+  .footer {
+    margin: 0 15px;
+  }
 }
 .footer__copyright {
   margin: 0;
@@ -569,10 +591,10 @@ img {
   height: 100%;
   vertical-align: middle;
 }
-.footer__link {
+.footer__ext-link {
   margin-right: 25px;
 }
-.footer__link_no-margin {
+.footer__ext-link_no-margin {
   margin-right: 0px;
 }
 .tatiana-denisenko-photographer-image {
@@ -585,4 +607,10 @@ img {
   .tatiana-denisenko-photographer-image {
     display: none;
   }
+}
+.post-excerpt {
+  padding-top: 55px;
+}
+.post-excerpt:last-child {
+  padding-bottom: 55px;
 }

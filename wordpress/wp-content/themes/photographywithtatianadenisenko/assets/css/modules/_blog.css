@@ -1,0 +1,7 @@
+.post-excerpt {
+  padding-top: 55px;
+
+  &:last-child {
+    padding-bottom: 55px;
+  }
+}

@@ -3,13 +3,17 @@
   justify-content: space-between;
   position: relative;
 
-  &__logo {
+  @media (max-width: 960px) {
+    margin: 0 15px;
+  }
+
+  &__logo-link {
     margin-top: 5px;
     @media (max-width: 961px) {
       margin-top: 0;
     }
 
-    & img {
+  &__logo-image {
       width: auto;
     }
   }

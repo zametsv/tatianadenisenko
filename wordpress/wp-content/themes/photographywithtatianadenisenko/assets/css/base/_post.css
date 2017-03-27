@@ -1,0 +1,51 @@
+.post {
+
+  &_clearfix {
+    clear: both;
+    overflow: auto;
+  }
+  @media (max-width: 960px) {
+    margin: 0 15px;
+  }
+
+  &_padding-top:first-child {
+    padding-top: 0;
+  }
+
+  &_padding-top {
+    padding-top: 55px;
+  }
+
+  &__heading_margin-top-small {
+    margin-top: 10px;
+  }
+
+  &__heading_margin-top {
+    margin-top: 55px;
+    @media (max-width: 736px) {
+      margin-top: 0;
+    }
+  }
+
+  &__date {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  &__permalink {
+    margin-top: 15px;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+.wp-caption-text {
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  margin-top: 10px;
+}
