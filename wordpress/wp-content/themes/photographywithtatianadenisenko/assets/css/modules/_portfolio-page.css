@@ -1,0 +1,33 @@
+.portfolio-content {
+  
+& img {
+  width: auto;
+  }
+
+& .wp-caption {
+  margin-top: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:first-child {
+  margin-top: 0;
+} 
+
+  &-text {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 272px;
+    text-align: left;
+    margin: 0 0 0 55px;
+    }
+  }
+}
+
+.width-fix {
+  display: block;
+}
+
+.margin-fix {
+  margin: 55px auto 0 auto;
+}

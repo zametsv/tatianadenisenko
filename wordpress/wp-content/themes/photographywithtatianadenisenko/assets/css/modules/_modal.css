@@ -1,0 +1,54 @@
+.modal {
+  position: fixed;
+  z-index: 2;
+  background-color: $lightblack;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: all 0.17s ease-in-out 0.17s;
+
+  &__nav-wrap {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__nav-wrap-item {
+    margin-top: 25px;
+
+    &_no-margin {
+      margin-top: 0;
+    }
+  }
+
+  &__nav-link {
+    font-size: 24px;
+    line-height: 29px;
+    color: white;
+  }
+
+  &__close-btn {
+    position: absolute;
+    top: 55px;
+    right: 55px;
+    width: auto;
+    transition: all 0.17s ease-in-out 0.17s;
+
+    &:hover {
+      cursor: pointer;
+      transform: rotate(90deg);
+    }
+  }
+
+  &__is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+}
+

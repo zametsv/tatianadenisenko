@@ -16,10 +16,10 @@
             <nav class="header__nav">
                 <ul class="header__nav-wrap">
                     <li class="header__nav-wrap-item"><a href="<?php echo site_url(); ?>" class="header__nav-link">Home</a></li>
-                    <li class="header__nav-wrap-item"><a href="#" class="header__nav-link">Portfolio</a></li>
+                    <li class="header__nav-wrap-item"><a href="#" class="header__nav-link header__nav-link_open-modal-lb">Portfolio</a></li>
                     <li class="header__nav-wrap-item"><a href="blog" class="header__nav-link">Blog</a></li>
                     <li class="header__nav-wrap-item"><a href="about" class="header__nav-link">About</a></li>
-                    <li class="header__nav-wrap-item header__nav-wrap-item_no-margin"><a href="#" class="header__nav-link">Contact</a></li>
+                    <li class="header__nav-wrap-item header__nav-wrap-item_no-margin"><a href="contact" class="header__nav-link">Contact</a></li>
                 </ul>
             </nav>
         </header>

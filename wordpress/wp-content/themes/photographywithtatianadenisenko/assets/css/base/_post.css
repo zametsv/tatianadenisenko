@@ -43,6 +43,10 @@
   }
 }
 
+.wp-caption {
+  margin-top: 15px;
+}
+
 .wp-caption-text {
   font-size: 10px;
   line-height: 12px;

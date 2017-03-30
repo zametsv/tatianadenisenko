@@ -7,6 +7,16 @@
                 </div>
             </footer>
         </div>
+        <div class="modal">
+            <ul class="modal__nav-wrap">
+                <li class="modal__nav-wrap-item modal__nav-wrap-item_no-margin"><a href="fashion" class="modal__nav-link">Fashion</a></li>
+                <li class="modal__nav-wrap-item"><a href="beauty" class="modal__nav-link">Beauty</a></li>
+                <li class="modal__nav-wrap-item"><a href="editorial" class="modal__nav-link">Editorial</a></li>
+                <li class="modal__nav-wrap-item"><a href="tests" class="modal__nav-link">Tests</a></li>
+                <li class="modal__nav-wrap-item"><a href="family" class="modal__nav-link">Family</a></li>
+            </ul>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/close-button.svg" class="modal__close-btn" alt="Close button" height="21px" width="20px">
+        </div>
         <?php wp_footer(); ?>
     </body>
 </html>

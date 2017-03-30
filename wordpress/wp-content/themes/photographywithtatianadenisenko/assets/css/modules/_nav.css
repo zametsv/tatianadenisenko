@@ -3,6 +3,10 @@
     display: none;
   }
 
+  &-link {
+    transition: all 0.17s ease-in-out 0.17s;
+  }
+
   &-wrap {
     margin: 0;
     padding: 0;
@@ -30,3 +34,10 @@
     }
   }
 }
+
+.nav-link {
+
+    &_hover {
+    color: $lightgray;
+    }
+  }

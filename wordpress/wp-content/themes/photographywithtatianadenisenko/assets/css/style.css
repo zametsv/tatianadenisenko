@@ -8,3 +8,6 @@
 @import "modules/_footer";
 @import "modules/_about-page";
 @import "modules/_blog";
+@import "modules/_contact";
+@import "modules/_modal";
+@import "modules/_portfolio-page";

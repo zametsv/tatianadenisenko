@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Close btn</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-1363.000000, -62.000000)" fill="#FFFFFF">
+            <g id="Lightbox-menu">
+                <g id="Close-btn" transform="translate(1370.495689, 69.495689) rotate(45.000000) translate(-1370.495689, -69.495689) translate(1360.495689, 58.995689)">
+                    <rect id="Rectangle-Copy" transform="translate(10.000000, 10.500000) rotate(90.000000) translate(-10.000000, -10.500000) " x="0" y="10" width="20" height="1" rx="0.5"></rect>
+                    <rect id="Rectangle-Copy-2" x="0" y="10" width="20" height="1" rx="0.5"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

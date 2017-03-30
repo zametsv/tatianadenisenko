@@ -1,0 +1,217 @@
+input,
+label,
+select,
+button,
+textarea
+{
+	margin:0;
+	border:0;
+	padding:0;
+	display:inline-block;
+	vertical-align:middle;
+	white-space:normal;
+	background:none;
+	line-height:1;
+}
+
+input:focus
+{
+	outline:0;
+}
+
+input,
+textarea
+{
+	-webkit-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	box-sizing:content-box;
+}
+
+button,
+input[type=reset],
+input[type=button],
+input[type=submit],
+input[type=checkbox],
+input[type=radio],
+select
+{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=range],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url],
+input[type=week]
+{
+}
+
+input[type=checkbox],
+input[type=radio]
+{
+	width:13px;
+	height:13px;
+}
+
+input[type=file]
+{
+
+}
+
+input[type=search]
+{
+	-webkit-appearance:textfield;
+	-webkit-box-sizing:content-box;
+}
+
+::-webkit-search-decoration
+{
+	display:none;
+}
+
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"]
+{
+	overflow:visible;
+	width:auto;
+}
+
+::-webkit-file-upload-button
+{	
+	padding:0;
+	border:0;
+	background:none;
+}
+
+textarea 
+{
+	vertical-align:top;
+	overflow:auto;
+
+  &:focus{
+    outline: 0;
+  }
+}
+
+.form {
+  @media (max-width: 960px) {
+    margin: 0 15px;
+  }
+}
+
+.form__item input {
+  width: 100%;
+  border-bottom: 1px solid $lightgray;
+}
+
+.form__item {
+  margin-top: 55px;
+  @media (max-width: 414px) {
+    margin-top: 25px;
+  }
+
+  &_no-margin {
+    margin-top: 55px;
+  }
+}
+
+input, textarea {
+  height: 45px;
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 29px;
+  color: $black;
+  transition: all 0.17s ease-in-out 0.17s;
+  @media (max-width: 414px) {
+    height: 35px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &:hover {
+    border-bottom: 1px solid $black;
+    color: $black;
+  }
+
+  &:focus {
+    border-bottom: 1px solid $black;
+    color: $black;
+  }
+}
+
+input:focus::placeholder {
+  color: $black;
+  transition: all 0.17s ease-in-out 0.17s;
+}
+
+input:hover::placeholder {
+  color: $black;
+  transition: all 0.17s ease-in-out 0.17s;
+}
+
+textarea:focus::placeholder {
+  color: $black;
+  transition: all 0.17s ease-in-out 0.17s;
+}
+
+textarea:hover::placeholder {
+  color: $black;
+  transition: all 0.17s ease-in-out 0.17s;
+}
+
+.submit-btn {
+  height: 55px;
+  border: 1px solid $lightgray;
+  border-radius: 1px;
+  color: $lightgray;
+  transition: all 0.17s ease-in-out 0.17s;
+  
+  &:hover {
+    cursor: pointer;
+    border: 1px solid $black;
+    color: $black;
+  }
+
+  &:focus {
+    border: 1px solid $black;
+  }
+}
+
+.textarea {
+  height: 175px;
+  width: 100%;
+  border-bottom: 1px solid $lightgray;
+  resize: none;
+  @media (max-width: 414px) {
+    height: 167px;
+  }
+}
+
+.error-message {
+  line-height: 16px;
+  padding: 5px 15px;
+  color: white;
+  border: 1px solid $red;
+  border-radius: 1px;
+  background-color: $red;
+
+  &_main {
+    background-color: white;
+    color: $red;
+  }
+}
