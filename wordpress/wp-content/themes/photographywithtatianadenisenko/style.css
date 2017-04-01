@@ -528,7 +528,7 @@ img {
           justify-content: space-between;
   position: relative;
 }
-@media (max-width: 960px) {
+@media (max-width: 963px) {
   .header {
     margin: 0 15px;
   }
@@ -585,7 +585,7 @@ img {
   text-align: center;
   position: relative;
 }
-@media (max-width: 960px) {
+@media (max-width: 963px) {
   .footer {
     margin: 0 15px;
   }
@@ -948,8 +948,18 @@ textarea:hover::placeholder {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
+@media (max-width: 663px) {
+  .portfolio-content {
+    margin: 0 15px;
+  }
+}
+@media (max-width: 580px) {
+  .portfolio-content {
+    margin: 0 55px;
+  }
+}
 .portfolio-content img {
-  width: auto;
+  width: 100%;
 }
 .portfolio-content .wp-caption {
   margin-top: 55px;
@@ -963,15 +973,36 @@ textarea:hover::placeholder {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media (max-width: 960px) {
+  .portfolio-content .wp-caption {
+    margin-top: 25px;
+  }
+}
 .portfolio-content .wp-caption:first-child {
   margin-top: 0;
 }
 .portfolio-content .wp-caption-text {
   font-size: 16px;
   line-height: 24px;
-  max-width: 272px;
+  max-width: 50%;
   text-align: left;
   margin: 0 0 0 55px;
+}
+@media (max-width: 960px) {
+  .portfolio-content .wp-caption-text {
+    margin-left: 25px;
+  }
+}
+.portfolio-content .aligncenter {
+  display: block;
+}
+.portfolio-content .aligncenter .wp-caption-text {
+  margin: 55px auto 0 auto;
+}
+@media (max-width: 960px) {
+  .portfolio-content .aligncenter .wp-caption-text {
+    margin-top: 25px;
+  }
 }
 .width-fix {
   display: block;

@@ -27,3 +27,24 @@ function new_excerpt_more( $more ) {
 	return '...';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+//Adding new img sizes
+add_image_size( 'Portfolio-medium-wide', 633 );
+add_image_size( 'Portfolio-large-wide', 1266 );
+add_image_size( 'Portfolio-medium', 306 );
+add_image_size( 'Portfolio-large', 612 );
+add_image_size( 'Blog-medium', 469 );
+add_image_size( 'Blog-large', 938 );
+
+add_filter( 'image_size_names_choose','my_image_sizes' );
+
+function my_image_sizes( $sizes ) {
+    return array_merge ( $sizes, array(
+        'Portfolio-medium-wide' => __('Portfolio Medium wide'),
+        'Portfolio-large-wide' => __('Portfolio Large wide'),
+        'Portfolio-medium' => __('Portfolio Medium'),
+        'Portfolio-large' => __('Portfolio Large'),
+        'Blog-medium' => __('Blog Medium'),
+        'Blog-large' => __('Blog large'),
+    ));
+}

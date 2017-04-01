@@ -2,7 +2,7 @@
   text-align: center;
   position: relative;
   
-  @media (max-width: 960px) {
+  @media (max-width: 963px) {
     margin: 0 15px;
   }
 
