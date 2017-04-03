@@ -16,6 +16,7 @@
       <div class="form__item">
         <input type="submit" value="Send" class="submit-btn">
         <p class="error-message error-message_main">All the required fields have to be filled out.</p>
+        <p class="error-message error-message_main_success">Thanks. I'll contact you ASAP!</p>
       </div>
     </form>
   </div>

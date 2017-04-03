@@ -19,4 +19,20 @@ jQuery(".header__nav-link").on("mouseleave", function(){
   jQuery(".header__nav-link").removeClass("nav-link_hover");
 });
 
-//paying with images in portfolio
+//revealing burger menu
+jQuery(".header__nav_mobile-btn").on("click", function(){
+  jQuery(".burger").addClass("burger_show");
+});
+jQuery(".burger__close-btn").on("click", function(){
+  jQuery(".burger").removeClass("burger_show");
+});
+
+//revealing items in burger menu
+jQuery(".burger__nav-link_click-item").on("click", function(){
+  jQuery(".burger__nav-wrap-item_hidden").addClass("burger__nav-wrap-item_show");
+  jQuery(".burger__nav-link_color").addClass("burger__nav-link_color-change");
+  jQuery(".burger__nav-link_click-item").on("click", function(){
+    jQuery(".burger__nav-wrap-item_hidden").removeClass("burger__nav-wrap-item_show");
+    jQuery(".burger__nav-link_color").removeClass("burger__nav-link_color-change");
+  });
+});

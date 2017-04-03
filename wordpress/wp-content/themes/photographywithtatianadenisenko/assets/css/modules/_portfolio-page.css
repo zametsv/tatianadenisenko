@@ -21,6 +21,9 @@
   @media (max-width: 960px) {
       margin-top: 25px;
   }
+  @media (max-width: 580px) {
+      display: block;
+  }
 
   &:first-child {
   margin-top: 0;
@@ -36,6 +39,20 @@
     @media (max-width: 960px) {
       margin-left: 25px;
       }
+
+    @media (max-width: 580px) {
+      margin: 25px auto 0 auto;
+      max-width: 70%;
+      }
+
+    @media (max-width: 500px) {
+      max-width: 90%;
+      }
+
+    @media (max-width: 414px) {
+      max-width: 100%;
+      margin: 15px 0 0 0;
+      }    
     }
   }
 
@@ -48,14 +65,10 @@
       @media (max-width: 960px) {
       margin-top: 25px;
       }
+
+      @media (max-width: 414px) {
+      margin: 15px 0 0 0;
+      }    
     }
   }
-}
-
-.width-fix {
-  display: block;
-}
-
-.margin-fix {
-  margin: 55px auto 0 auto;
 }

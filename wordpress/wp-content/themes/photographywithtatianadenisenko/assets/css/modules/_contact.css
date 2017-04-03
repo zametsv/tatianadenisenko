@@ -209,9 +209,22 @@ textarea:hover::placeholder {
   border: 1px solid $red;
   border-radius: 1px;
   background-color: $red;
+  display: none;
+  
 
   &_main {
     background-color: white;
     color: $red;
+
+    &_success {
+      color: $black;
+      border-color: $black;
+      background-color: white;
+    }
   }
+}
+
+.error {
+  border-color: $red;
+  color: $red;
 }
