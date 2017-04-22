@@ -23,6 +23,13 @@
     margin: 25px auto 0 auto;
     text-align: center;
 
+
+    &_hidden-menu {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .4s cubic-bezier(.4,0,.2,1);
+    }
+
     &-item {
       margin-top: 25px;
       transition: all 0.17s ease-in-out 0.17s;
@@ -35,10 +42,6 @@
         margin-top: 25px;
       }
 
-      &_hidden {
-        display: none;
-      }
-
       &_show {
         display: block;
       }
@@ -48,13 +51,17 @@
   &__nav-link {
     color: white;
     transition: all 0.17s ease-in-out 0.17s;
-
-    &_color-change {
-      color: $darkgray;
-    }
   }
 
   &_show {
     right: 0;
   }
+}
+
+.open-menu {
+  max-height: 170px;
+}
+
+.color-change {
+  color: $darkgray;
 }

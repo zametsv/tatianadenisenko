@@ -30,6 +30,7 @@
     font-size: 24px;
     line-height: 29px;
     color: white;
+    transition: all 0.17s ease-in-out 0.17s;
   }
 
   &__close-btn {
@@ -52,3 +53,9 @@
   }
 }
 
+.modal-link {
+
+    &_hover {
+    color: $darkgray;
+    }
+  }

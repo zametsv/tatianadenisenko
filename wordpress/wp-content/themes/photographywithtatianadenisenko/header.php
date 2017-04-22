@@ -11,8 +11,8 @@
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/close-button.svg" class="burger__close-btn" alt="Close button" height="21px" width="20px">
             <ul class="burger__nav-wrap">
                 <li class="burger__nav-wrap-item"><a href="<?php echo site_url(); ?>" class="burger__nav-link burger__nav-link_color">Home</a></li>
-                <li class="burger__nav-wrap-item"><a href="#" class="burger__nav-link burger__nav-link_click-item">Portfolio+</a>
-                    <ul>
+                <li class="burger__nav-wrap-item burger__nav-wrap-item_click"><a href="#" class="burger__nav-link burger__nav-link_click-item">Portfolio+</a>
+                    <ul class="burger__nav-wrap_hidden-menu">
                         <li class="burger__nav-wrap-item burger__nav-wrap-item_big-margin burger__nav-wrap-item_hidden"><a href="fashion" class="burger__nav-link">Fashion</a></li>
                         <li class="burger__nav-wrap-item burger__nav-wrap-item_small-margin burger__nav-wrap-item_hidden"><a href="beauty" class="burger__nav-link">Beauty</a></li>
                         <li class="burger__nav-wrap-item burger__nav-wrap-item_small-margin burger__nav-wrap-item_hidden"><a href="editorial" class="burger__nav-link">Editorial</a></li>

@@ -205,23 +205,27 @@ textarea:hover::placeholder {
 .error-message {
   line-height: 16px;
   padding: 5px 15px;
-  color: white;
+  color: $red;
   border: 1px solid $red;
   border-radius: 1px;
-  background-color: $red;
+  background-color: white;
   display: none;
   
 
   &_main {
-    background-color: white;
-    color: $red;
-
-    &_success {
-      color: $black;
-      border-color: $black;
-      background-color: white;
-    }
+    background-color: $red;
+    color: white;
   }
+}
+
+.success-message {
+  line-height: 16px;
+  padding: 5px 15px;
+  color: $black;
+  border: 1px solid $black;
+  border-radius: 1px;
+  background-color: white;
+  display: none;
 }
 
 .error {

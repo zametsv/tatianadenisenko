@@ -887,20 +887,24 @@ textarea:hover::placeholder {
 .error-message {
   line-height: 16px;
   padding: 5px 15px;
-  color: white;
+  color: #bf4747;
   border: 1px solid #bf4747;
   border-radius: 1px;
-  background-color: #bf4747;
+  background-color: white;
   display: none;
 }
 .error-message_main {
-  background-color: white;
-  color: #bf4747;
+  background-color: #bf4747;
+  color: white;
 }
-.error-message_main_success {
+.success-message {
+  line-height: 16px;
+  padding: 5px 15px;
   color: #424242;
-  border-color: #424242;
+  border: 1px solid #424242;
+  border-radius: 1px;
   background-color: white;
+  display: none;
 }
 .error {
   border-color: #bf4747;
@@ -938,6 +942,8 @@ textarea:hover::placeholder {
   font-size: 24px;
   line-height: 29px;
   color: white;
+  -webkit-transition: all 0.17s ease-in-out 0.17s;
+  transition: all 0.17s ease-in-out 0.17s;
 }
 .modal__close-btn {
   position: absolute;
@@ -957,6 +963,9 @@ textarea:hover::placeholder {
   visibility: visible;
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+.modal-link_hover {
+  color: #7b7b7b;
 }
 @media (max-width: 663px) {
   .portfolio-content {
@@ -1067,6 +1076,12 @@ textarea:hover::placeholder {
   margin: 25px auto 0 auto;
   text-align: center;
 }
+.burger__nav-wrap_hidden-menu {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height .4s cubic-bezier(.4,0,.2,1);
+  transition: max-height .4s cubic-bezier(.4,0,.2,1);
+}
 .burger__nav-wrap-item {
   margin-top: 25px;
   -webkit-transition: all 0.17s ease-in-out 0.17s;
@@ -1078,9 +1093,6 @@ textarea:hover::placeholder {
 .burger__nav-wrap-item_big-margin {
   margin-top: 25px;
 }
-.burger__nav-wrap-item_hidden {
-  display: none;
-}
 .burger__nav-wrap-item_show {
   display: block;
 }
@@ -1089,9 +1101,12 @@ textarea:hover::placeholder {
   -webkit-transition: all 0.17s ease-in-out 0.17s;
   transition: all 0.17s ease-in-out 0.17s;
 }
-.burger__nav-link_color-change {
-  color: #7b7b7b;
-}
 .burger_show {
   right: 0;
+}
+.open-menu {
+  max-height: 170px;
+}
+.color-change {
+  color: #7b7b7b;
 }
