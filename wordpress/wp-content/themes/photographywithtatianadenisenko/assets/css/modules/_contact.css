@@ -106,129 +106,181 @@ textarea
   }
 }
 
-.form {
-  @media (max-width: 960px) {
+.wpcf7-form {
+	max-width: 469px;
+
+	@media (max-width: 960px) {
     margin: 0 15px;
   }
-}
 
-.form__item input {
-  width: 100%;
-  border-bottom: 1px solid $lightgray;
-}
+	label {
+	color: $lightgray;
+	font-size: 24px;
+	line-height: 29px;
 
-.form__item {
-  margin-top: 55px;
-  @media (max-width: 414px) {
-    margin-top: 25px;
-  }
+	@media (max-width: 960px) {
+    font-size: 21px;
+		line-height: 25px;
+  	}
 
-  &_no-margin {
-    margin-top: 55px;
-  }
-}
-
-input, textarea {
-  height: 45px;
-  font-family: 'Exo 2', sans-serif;
-  font-style: normal;
-  font-weight: 200;
-  font-size: 24px;
-  line-height: 29px;
-  color: $black;
-  transition: all 0.17s ease-in-out 0.17s;
-  @media (max-width: 414px) {
-    height: 35px;
+	@media (max-width: 414px) {
     font-size: 16px;
-    line-height: 19px;
-  }
+		line-height: 19px;
+  	}	
+	}
 
-  &:hover {
-    border-bottom: 1px solid $black;
-    color: $black;
-  }
+	p {
+		margin-top: 0;
+	}
 
-  &:focus {
-    border-bottom: 1px solid $black;
-    color: $black;
-  }
-}
+	p:nth-child(3) {
+			margin-top: 35px;
+			@media (max-width: 414px) {
+				margin-top: 25px;
+  		}	
+	}
 
-input:focus::placeholder {
-  color: $black;
-  transition: all 0.17s ease-in-out 0.17s;
-}
+	p:nth-child(4) {
+			margin-top: 35px;
+			@media (max-width: 414px) {
+				margin-top: 25px;
+  		}	
+	}
 
-input:hover::placeholder {
-  color: $black;
-  transition: all 0.17s ease-in-out 0.17s;
-}
+	p:nth-child(5) {
+			margin-top: 35px;
+			@media (max-width: 414px) {
+				margin-top: 25px;
+  		}	
+	}
 
-textarea:focus::placeholder {
-  color: $black;
-  transition: all 0.17s ease-in-out 0.17s;
-}
+	input {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 6px 20px;
+		margin-top: 15px;
+		height: 45px;
+		border: 1px solid $lightgray;
+		border-radius: 1px;
+		font-family: 'Exo 2', sans-serif;
+		font-style: normal;
+		font-weight: 200;
+		font-size: 24px;
+		line-height: 29px;
+		color: $black;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		transition: all 0.17s ease-in-out 0.17s;
 
-textarea:hover::placeholder {
-  color: $black;
-  transition: all 0.17s ease-in-out 0.17s;
-}
+		@media (max-width: 960px) {
+    font-size: 21px;
+		line-height: 25px;
+  		}
 
-.submit-btn {
-  height: 55px;
-  border: 1px solid $lightgray;
-  border-radius: 1px;
-  color: $lightgray;
-  transition: all 0.17s ease-in-out 0.17s;
-  
-  &:hover {
-    cursor: pointer;
-    border: 1px solid $black;
-    color: $black;
-  }
+		@media (max-width: 414px) {
+    font-size: 16px;
+		line-height: 19px;
+  		}	
 
-  &:focus {
-    border: 1px solid $black;
-  }
-}
+		&:hover, &:focus {
+			border-color: $black;
+		}
+	}
 
-.textarea {
-  height: 175px;
-  width: 100%;
-  border-bottom: 1px solid $lightgray;
-  resize: none;
-  @media (max-width: 414px) {
-    height: 167px;
-  }
-}
+	textarea {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 6px 20px;
+		margin-top: 15px;
+		height: 150px;
+		border: 1px solid $lightgray;
+		border-radius: 1px;
+		font-family: 'Exo 2', sans-serif;
+		font-style: normal;
+		font-weight: 200;
+		font-size: 24px;
+		line-height: 29px;
+		color: $black;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		resize: none;
+		transition: all 0.17s ease-in-out 0.17s;
 
-.error-message {
-  line-height: 16px;
-  padding: 5px 15px;
-  color: $red;
-  border: 1px solid $red;
-  border-radius: 1px;
-  background-color: white;
-  display: none;
-  
+		@media (max-width: 960px) {
+    font-size: 21px;
+		line-height: 25px;
+  		}
 
-  &_main {
-    background-color: $red;
-    color: white;
-  }
-}
+		@media (max-width: 414px) {
+    font-size: 16px;
+		line-height: 19px;
+  		}
 
-.success-message {
-  line-height: 16px;
-  padding: 5px 15px;
-  color: $black;
-  border: 1px solid $black;
-  border-radius: 1px;
-  background-color: white;
-  display: none;
-}
+		&:hover, &:focus {
+			border-color: $black;
+		}
+	}
 
-.error {
-  border-color: $red;
-  color: $red;
-}
+	.wpcf7-submit {
+		padding: 0;
+		margin-top: 0;
+		width: 100%;
+		height: 45px;
+		font-family: 'Exo 2', sans-serif;
+  	font-style: normal;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		color: $lightgray;
+		font-size: 24px;
+
+		@media (max-width: 960px) {
+    font-size: 21px;
+		line-height: 25px;
+  		}
+
+		@media (max-width: 414px) {
+    font-size: 16px;
+		line-height: 19px;
+  		}
+
+		&:hover {
+			cursor: pointer;
+			color: $black;
+		}
+
+		&:focus {
+			border-color: $lightgray;
+		}
+	}
+
+	.wpcf7-not-valid-tip {
+		box-sizing: border-box;
+		color: white;
+		background-color: $red;
+		width: 100%;
+		line-height: 19px;
+		font-size: 16px;
+		margin-top: 15px;
+		padding: 5px 20px;
+		border-radius: 1px;
+	}
+
+	.wpcf7-response-output {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	.wpcf7-validation-errors {
+		box-sizing: border-box;
+		border: none;
+		color: $red;
+	}
+
+	.wpcf7-mail-sent-ok {
+		box-sizing: border-box;
+		border: none;
+		color: $green;
+	}
+} 
+
