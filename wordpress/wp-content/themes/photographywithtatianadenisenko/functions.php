@@ -3,7 +3,7 @@
 function theme_resources() {
     wp_enqueue_style('style', get_stylesheet_uri());
     wp_enqueue_script( 'scripts', get_template_directory_uri() . '/assets/js/scripts.js', array( 'jquery' ), '1.0.0', true );
-    //wp_enqueue_script( 'retina', get_template_directory_uri() . '/assets/js/retina.js', '1.3.0', true );
+    wp_enqueue_script( 'modernizr-custom', get_template_directory_uri() . '/assets/js/modernizr-custom.js', true );
 }
     
 add_action('wp_enqueue_scripts', 'theme_resources');

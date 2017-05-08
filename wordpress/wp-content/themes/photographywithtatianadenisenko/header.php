@@ -27,9 +27,7 @@
         </div>  
         <div class="wrapper">  
             <header class="header">
-                <a href="<?php echo site_url(); ?>" class="header__logo-link">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" alt="Logo" width="166px" height="22px" class="header__logo-image"/>
-                </a>
+                <a href="<?php echo site_url(); ?>" class="header__logo-link"></a>
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/menu-icon.svg" alt="Menu icon" width="20px" height="11px" class="header__nav_mobile-btn">
                 <nav class="header__nav">
                     <ul class="header__nav-wrap">

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="container container_narrowest">
-  <?php query_posts('post_type=post&post_status=publish&posts_per_page=10&paged='. get_query_var('paged')); ?>
+  <?php query_posts('post_type=post&post_status=publish&posts_per_page=9999&paged='. get_query_var('paged')); ?>
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <article class="post post_padding-top">
           <small class="post__date"><?php the_time('F jS, Y'); ?></small>
